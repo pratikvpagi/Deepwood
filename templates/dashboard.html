@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoNova ESG Dashboard</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">
+            🌱 EcoNova Materials
+        </div>
+
+        <div class="nav-links">
+            <a href="/">Dashboard</a>
+            <a href="/careers">Careers</a>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <section class="hero">
+        <h1>ESG Performance Dashboard</h1>
+        <p>Environmental, Social & Governance Metrics Overview</p>
+    </section>
+
+    <!-- KPI SECTION -->
+    <section class="kpi-section">
+
+        <div class="kpi-card">
+            <h3>GHG Emissions</h3>
+            <h2 id="ghg-total">0</h2>
+            <p>Target: 250 tCO₂e</p>
+
+            <div class="progress-bar">
+                <div id="ghg-progress"></div>
+            </div>
+
+            <span id="ghg-percent">0%</span>
+        </div>
+
+        <div class="kpi-card">
+            <h3>Energy Consumed</h3>
+            <h2 id="energy-total">0</h2>
+            <p>Target: 115,000 kWh</p>
+
+            <div class="progress-bar">
+                <div id="energy-progress"></div>
+            </div>
+
+            <span id="energy-percent">0%</span>
+        </div>
+
+        <div class="kpi-card">
+            <h3>Water Used</h3>
+            <h2 id="water-total">0</h2>
+            <p>Target: 1,800 kL</p>
+
+            <div class="progress-bar">
+                <div id="water-progress"></div>
+            </div>
+
+            <span id="water-percent">0%</span>
+        </div>
+
+        <div class="kpi-card">
+            <h3>Waste Generated</h3>
+            <h2 id="waste-total">0</h2>
+            <p>Target: 7,000 kg</p>
+
+            <div class="progress-bar">
+                <div id="waste-progress"></div>
+            </div>
+
+            <span id="waste-percent">0%</span>
+        </div>
+
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section class="certifications">
+        <h2>Certifications</h2>
+
+        <div id="certification-list" class="badge-container">
+
+        </div>
+    </section>
+
+    <!-- CHARTS -->
+    <section class="charts-container">
+
+        <div class="chart-card">
+            <h2>Monthly GHG Trend</h2>
+            <canvas id="ghgChart"></canvas>
+        </div>
+
+        <div class="chart-card">
+            <h2>Monthly Energy & Water Usage</h2>
+            <canvas id="energyWaterChart"></canvas>
+        </div>
+
+        <div class="chart-card">
+            <h2>GHG Scope Breakdown</h2>
+            <canvas id="scopeChart"></canvas>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 EcoNova Materials Pvt. Ltd.</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+
+</body>
+</html>

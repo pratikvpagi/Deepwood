@@ -1,0 +1,64 @@
+{
+  "company": "EcoNova Materials Pvt. Ltd.",
+  "unit": "Metric Tonnes CO2e / kWh / kL",
+  "monthly_data": [
+    {
+      "month": "Oct 2024",
+      "ghg_emissions": 42.3,
+      "energy_kwh": 18400,
+      "water_kl": 310,
+      "waste_kg": 1250
+    },
+    {
+      "month": "Nov 2024",
+      "ghg_emissions": 45.1,
+      "energy_kwh": 19200,
+      "water_kl": 295,
+      "waste_kg": 1180
+    },
+    {
+      "month": "Dec 2024",
+      "ghg_emissions": 50.8,
+      "energy_kwh": 21500,
+      "water_kl": 340,
+      "waste_kg": 1420
+    },
+    {
+      "month": "Jan 2025",
+      "ghg_emissions": 47.6,
+      "energy_kwh": 20100,
+      "water_kl": 320,
+      "waste_kg": 1300
+    },
+    {
+      "month": "Feb 2025",
+      "ghg_emissions": 43.9,
+      "energy_kwh": 18900,
+      "water_kl": 285,
+      "waste_kg": 1150
+    },
+    {
+      "month": "Mar 2025",
+      "ghg_emissions": 39.2,
+      "energy_kwh": 17300,
+      "water_kl": 270,
+      "waste_kg": 1080
+    }
+  ],
+  "targets": {
+    "ghg_annual_tco2e": 250,
+    "energy_annual_kwh": 115000,
+    "water_annual_kl": 1800,
+    "waste_annual_kg": 7000
+  },
+  "scope_breakdown": {
+    "scope1_percent": 38,
+    "scope2_percent": 52,
+    "scope3_percent": 10
+  },
+  "certifications": [
+    "ISO 14001:2015",
+    "GreenCo Silver",
+    "BRSR Compliant"
+  ]
+}
